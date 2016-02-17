@@ -1,5 +1,5 @@
-## Appsflyer Youtube search
+## AppsFlyer YouTube Search
 ###### To run the application
-1. navigate to the older of the app
-2. run npm install
-3. run grunt serve
+1. Navigate to the older of the app
+2. Run npm install
+3. Run grunt serve
