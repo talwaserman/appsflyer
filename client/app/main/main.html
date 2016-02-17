@@ -1,0 +1,21 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="appsFlyer-youtubeSearch">
+<h1>YouTube<span class="-trademark">&trade;</span>Search</h1>
+  <input type="text" name="search" class="form-control" placeholder="Search for..." ng-bind="searchText">
+  <button type="button" class="btn btn-default search-button" ng-click="searchFunction()">Search</button>
+  <button type="button" class="btn btn-default sort-title-button">Sort By Title</button>
+  <button type="button" class="btn btn-default date">Sort By Upload Date</button>
+  <ul>
+    <li ng-repeat="item in searchList">
+      <div class="list-img">
+        <img src="{{item.snippet.thumbnails.default.url}}" height="80" width="80">
+      </div>
+      <div class="list-title">
+        <span><strong>{{item.snippet.title}}</strong></span>
+        <a style="float: right">some link</a>
+      </div>
+      <div class="list-description">{{item.snippet.description}}</div>
+    </li>
+  </ul>
+
